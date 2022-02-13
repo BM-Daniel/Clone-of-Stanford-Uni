@@ -176,3 +176,30 @@ header h1 a {
     max-width: 40vw;
 }
 
+#events-section {
+    text-align: center;
+    background-color: rgb(53, 40, 40);
+    
+}
+#events-section > h2 {
+    padding: 10vh 0 3vh 0;
+    font-size: 7vh;
+    color:rgb(255, 255, 255);
+    font-weight: 800;
+}
+#events-section > p {
+    color:rgb(255, 255, 255);
+    font-size: 4vh;
+    margin-bottom: 10vh;
+}
+#events-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.events-tiles {
+    background-color:rgb(255, 255, 255);
+    color:rgb(255, 0, 0);
+}
