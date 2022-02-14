@@ -196,10 +196,42 @@ header h1 a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    padding: 0 2vw;
 }
 
 .events-tiles {
     background-color:rgb(255, 255, 255);
-    color:rgb(255, 0, 0);
+    color:rgb(61, 61, 61);
+    width: 23%;
+    height: 90vh;
+    text-align: left;
+    
+}
+
+.events-tiles > img {
+    width: 100%;
+}
+.events-date {
+    color:rgb(255, 255, 255);
+    background-color: rgb(53, 40, 40);
+    font-size: 3vh;
+    padding: 5vh 3vh;
+    position: relative;
+    top: -2vh;
+}
+.events-tiles > h3, .events-tiles > p, .events-tiles time {
+    margin: 0 2vw;
+}
+.events-tiles > h3 {
+    margin-top: 9vh;
+    margin-bottom: 1vh;
+    color:rgb(163, 1, 1);
+    font-weight: 500;
+    
+}
+.events-tiles > p{
+    font-size: 3vh;
+    font-weight: 600;
+    margin-bottom: 3vh;
+    line-height: 4vh;
 }
