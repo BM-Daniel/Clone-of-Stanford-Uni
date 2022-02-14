@@ -13,6 +13,9 @@ a {
     text-decoration: none;
 }
 
+
+/*Header Section */
+
 header {
     display: flex;
     flex-direction: row;
@@ -23,18 +26,24 @@ header {
     top: 0;
     left: 0;
 }
+
 header h1 a {
 
 }
-#header h1 {
+header h1 {
     
 }
+
 #header-navbar {
     margin-left: 15vw;
 }
+
 #header-navbar a {
     margin: 0 1vw;
 }
+
+
+/* Welcome Section */
 
 #welcome-image {
     position: absolute;
@@ -44,11 +53,12 @@ header h1 a {
     height: 100vh;
     width: 100%;
     opacity: 0.9;
-
 }
+
 #welcome-section {
     
 }
+
 #welcome-section-navbar {
     color: rgb(255, 255, 255);
     margin-left: 15vw;
@@ -56,9 +66,11 @@ header h1 a {
     top: 10vh;
     left: 0;
 }
+
 #welcome-section-navbar a {
     padding: 0 2vw;
 }
+
 #welcome-section h2 {
     font-size: 10vw;
     font-family:'Times New Roman', Times, serif;
@@ -73,31 +85,23 @@ header h1 a {
     background-color:rgb(255, 0, 0);
     padding: 1vh 0;
 }
-#welcome-section a {
 
-}
 
-#covid-section {
-    background-color:rgb(145, 114, 114);
-    color:rgb(255, 255, 255);
+/* General Classes */
+
+.section-h2 {
+    padding: 10vh 0 2vh 0;
+    font-size: 7vh;
+    font-weight: 800;
     text-align: center;
 }
-#covid-section h2 {
-    font-size: 7vh;
-    padding: 15vh 0 5vh 0;
 
+.section-p {
+    text-align: center;
+    font-size: 4vh;
+    margin-bottom: 10vh;
 }
-#covid-section p {
-    font-size: 2vw;
-    width: 70%;
-    margin-left: 15vw;
-}
-#covid-section p a {
-    text-decoration: underline;
-}
-#covid-section > h4 a {
-    padding: 3vh 2vw;
-}
+
 .more-h4 {
     padding: 15vh 0;
     font-size: 3vh;
@@ -110,65 +114,88 @@ header h1 a {
     
 }
 
-#news-section h2 {
-    padding: 15vh 0 5vh 0;
-    font-size: 7vh;
+
+/* COVID Section */
+
+#covid-section {
+    background-color:rgb(88, 74, 74);
+    color:rgb(255, 255, 255);
     text-align: center;
 }
-#news-section-p {
-    font-size: 4vh;
-    text-align: center;
-    padding-bottom: 5vh;
+
+#covid-section p {
+    padding: 0 15vw;  
 }
+
+#covid-section p a {
+    text-decoration: underline;
+}
+
+#covid-section > h4 {
+    padding-top: 0;
+}
+
+#covid-section > h4 a {
+    padding: 3vh 2vw;
+}
+
+
+/* News Section */
 
 #news-tiles {
     display: grid;
     grid-template-columns: repeat(4, 22vw);
     gap: 4vh;
     margin: 0 2vw;
-    
 }
 
 #news-tiles > article:nth-of-type(1) {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
 }
+
 #news-tiles > article:nth-of-type(1) img, #news-tiles > article:nth-of-type(6) img {
     width: 46vw;
     height: 60vh;
 }
+
 #news-tiles > article:nth-of-type(6) {
     grid-column: 3 / 5;
     grid-row: 2 / 3;
 }
 
-.tiles {
+.news-grid {
     background-color:rgb(255, 255, 255);
     height: 60vh;
     box-shadow: 0px 0px 4px rgb(0, 0, 0);
 }
-.tiles h3 {
+
+.news-grid h3 {
     text-transform: uppercase;
     font-size: 2vh;
     font-weight: 700;
     color:rgb(163, 1, 1);
 }
-.tiles p {
+
+.news-grid p {
     margin-top: 2vh;
     font-size: 3vh;
     font-weight: 600;
 }
-.tiles h3, .tiles p {
+
+.news-grid h3, .news-grid p {
     padding: 0 2vw;
 }
-.tiles img {
+
+.news-grid img {
     height: 30vh;
     width: 22vw;
     object-fit: cover;
     object-position: center;
     margin-bottom: 4vh;
 }
-.large-tiles h3, .large-tiles p {
+
+.news-large-tiles h3, .news-large-tiles p {
     color:rgb(255, 255, 255);
     position: relative;
     top: -20vh;
@@ -176,22 +203,23 @@ header h1 a {
     max-width: 40vw;
 }
 
+
+/* Events Section */
+
 #events-section {
-    text-align: center;
     background-color: rgb(53, 40, 40);
-    
 }
+
 #events-section > h2 {
-    padding: 10vh 0 3vh 0;
-    font-size: 7vh;
     color:rgb(255, 255, 255);
-    font-weight: 800;
 }
+
 #events-section > p {
     color:rgb(255, 255, 255);
-    font-size: 4vh;
-    margin-bottom: 10vh;
 }
+
+/* Events Section - FlexBox */
+
 #events-flexbox {
     display: flex;
     flex-direction: row;
@@ -211,6 +239,7 @@ header h1 a {
 .events-tiles > img {
     width: 100%;
 }
+
 .events-date {
     color:rgb(255, 255, 255);
     background-color: rgb(53, 40, 40);
@@ -219,9 +248,11 @@ header h1 a {
     position: relative;
     top: -2vh;
 }
+
 .events-tiles > h3, .events-tiles > p, .events-tiles time {
     margin: 0 2vw;
 }
+
 .events-tiles > h3 {
     margin-top: 9vh;
     margin-bottom: 1vh;
@@ -229,6 +260,7 @@ header h1 a {
     font-weight: 500;
     
 }
+
 .events-tiles > p{
     font-size: 3vh;
     font-weight: 600;
