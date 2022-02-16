@@ -267,3 +267,52 @@ header h1 {
     margin-bottom: 3vh;
     line-height: 4vh;
 }
+
+
+/* Academics Section */
+
+.academics-p-main {
+    margin: 0 20vw;
+}
+
+.academics-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.academics-tiles {
+    width: 30%;
+    margin: 10vh 0 15vh 0;
+}
+
+.academics-tiles > img {
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+.academics-tiles > p {
+    margin: 3vh 0;
+    line-height: 4vh;;
+}
+
+.academics-tiles > a, #academics-section > p > a {
+    color: rgb(2, 93, 179);
+}
+
+.academics-tiles > a {
+    font-weight: 600;
+}
+
+.schools-p {
+    text-align: center;
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.schools-p > a {
+    font-size: 3vh;
+    padding: 0 1vw;
+    font-weight: normal;
+}
