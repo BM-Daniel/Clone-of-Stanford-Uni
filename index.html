@@ -7,37 +7,51 @@
     <title>Stanford University - Clone</title>
 
     <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--
     <script src="https://kit.fontawesome.com/8c97bcec83.js" crossorigin="anonymous"></script>
+    -->
 
 </head>
 <body>
     <header>
-        <h1><a href="#">Stanford University</a></h1>
+        <div id="header-container">
+            <h1><a href="#">Stanford University</a></h1>
 
-        <nav id="header-navbar">
-            <a href="#">Students</a>
-            <a href="#">Faculty & Staff</a>
-            <a href="#">Families</a>
-            <a href="#">Visitors</a>
-            <a href="#">Alumni</a>
-            <a href="#">COVID Resources</a>
-            <i class="fa-solid fa-magnifying-glass"></i><button>Search</button>
-        </nav>
+            <nav id="header-navbar" class="navbar">
+                <a href="#">Students</a>
+                <a href="#">Faculty & Staff</a>
+                <a href="#">Families</a>
+                <a href="#">Visitors</a>
+                <a href="#">Alumni</a>
+                <a href="#">COVID Resources</a>
+                <button><i class="fa-solid fa-magnifying-glass"></i> Search</button>
+            </nav>
+        </div>
+
+        <div id="sub-navbar" class="navbar">
+            <a href="#">News</a>
+            <a href="#">Events</a>
+            <a href="#">Academics</a>
+            <a href="#">Research</a>
+            <a href="#">Health Care</a>
+            <a href="#">Campus Life</a>
+            <a href="#">Admission</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="hamburger-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            
+            <h2>Menu</h2>
+        </div>
     </header>
     <img id="welcome-image" src="./images/stanford_university_overview.jpg">
     <main>
         <section id="welcome-section">
-            <nav id="welcome-section-navbar">
-                <a href="#">News</a>
-                <a href="#">Events</a>
-                <a href="#">Academics</a>
-                <a href="#">Research</a>
-                <a href="#">Health Care</a>
-                <a href="#">Campus Life</a>
-                <a href="#">Admission</a>
-                <a href="#">About</a>
-            </nav>
             <h2>Stanford</h2>
             <p><a href="#">Explore Stanford</a></p>
         </section>

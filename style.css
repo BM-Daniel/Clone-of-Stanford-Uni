@@ -1,3 +1,9 @@
+/*
+1. Add a root selector to include variables of colors and others
+2. Change the font-family of the document
+3. Work on the search button appearance
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -18,28 +24,44 @@ a {
 
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vh 2vw;
+    flex-direction: column;
     position: fixed;
+    padding: 2vh 2vw;
     top: 0;
     left: 0;
 }
 
-header h1 a {
+#header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
-}
-header h1 {
-    
-}
 
 #header-navbar {
     margin-left: 15vw;
 }
 
-#header-navbar a {
+#header-navbar a, #sub-navbar a {
     margin: 0 1vw;
+}
+
+#sub-navbar {
+    position: relative;
+    margin: 3vh 15vw;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    background-color: rgb(255, 255, 255);
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
 }
 
 
@@ -354,4 +376,33 @@ header h1 {
 
 @media screen and (max-width: 1023px) {
 
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    #header-container {
+        flex-direction: column;
+    }
+
+    #header-navbar button {
+        position: absolute;
+        top: 0;
+    }
+
+    #sub-navbar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .navbar {
+        position: absolute;
+        top: 10vh;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
 }
