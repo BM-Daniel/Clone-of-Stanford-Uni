@@ -316,3 +316,42 @@ header h1 {
     padding: 0 1vw;
     font-weight: normal;
 }
+
+
+/* Auditorium Section */
+
+#auditorium-section {
+    
+}
+
+#auditorium-section > img {
+    object-fit: cover;
+    width: 100%;
+    opacity: 1;
+
+    /*
+    animation-name: blur;
+    animation-duration: 3s;
+    */
+}
+
+#auditorium-section > img:hover {
+    -webkit-filter: blur(3px);
+}
+
+/*
+@keyframes blur {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.2;
+    }
+}
+*/
+
+
+@media screen and (max-width: 1023px) {
+
+}
